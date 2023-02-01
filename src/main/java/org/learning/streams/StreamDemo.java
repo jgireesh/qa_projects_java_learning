@@ -24,5 +24,11 @@ public class StreamDemo {
         //add same number for all list of array
         System.out.println(numLst.stream().map(x -> x+30).collect(Collectors.toList()));
 
+        numLst.stream().forEach(x -> System.out.println(x));
+
+        numLst.stream().forEach(x -> {if(x==20){
+            System.out.println("x is 20");
+        }});
+
     }
 }
