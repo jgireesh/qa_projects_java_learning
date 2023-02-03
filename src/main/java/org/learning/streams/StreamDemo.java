@@ -30,5 +30,9 @@ public class StreamDemo {
             System.out.println("x is 20");
         }});
 
+
+        int sum = numLst.stream().reduce(0,(ans,i)->ans+i);
+        System.out.println("sum using reduce option "+sum);
+
     }
 }
